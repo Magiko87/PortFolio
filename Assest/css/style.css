@@ -1,46 +1,54 @@
-body{
+body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(/Assest/immagini/sfondo.jpg);
 }
-.header .logo{
+
+.header .logo {
     height: 70px;
     float: left;
     padding: 10px 20px;
 }
-.header{
+
+.header {
     background-color: rgb(17, 16, 31);
     position: fixed;
     width: 100%;
-    }
-.header ul{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        overflow: hidden;
-        background-color: rgb(17, 16, 31);
-    }
-.header ul a{
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: rgb(17, 16, 31);
+}
+
+.header ul a {
     display: block;
     padding: 20px;
     text-decoration: none;
     color: white;
-    }
-.header ul a:hover{
+}
+
+.header ul a:hover {
     background-color: rgb(35, 35, 54);
 }
-.header .menu{
+
+.header .menu {
     clear: both;
     max-height: 0;
     transition: max height .3s ease-out;
 }
-.header .menu-icon{
+
+.header .menu-icon {
     padding: 20px 20px;
     position: relative;
     float: right;
     cursor: pointer;
 }
-.header .menu-icon .nav-icon{
+
+.header .menu-icon .nav-icon {
     background-color: white;
     display: block;
     width: 15px;
@@ -48,7 +56,8 @@ body{
     position: relative;
     transition: background-color .3s ease-out;
 }
-.header .menu-icon .nav-icon::before{
+
+.header .menu-icon .nav-icon::before {
     background-color: white;
     content: "";
     display: block;
@@ -57,9 +66,10 @@ body{
     transition: all .3s ease-out;
     position: absolute;
     top: 5px;
-     
+
 }
-.header .menu-icon .nav-icon::after{
+
+.header .menu-icon .nav-icon::after {
     background-color: white;
     content: "";
     display: block;
@@ -69,48 +79,97 @@ body{
     position: absolute;
     top: -5px;
 }
-.header .menu-btm{
+
+.header .menu-btm {
     display: none;
 }
-.header .menu-btm:checked ~ .menu{
-    max-height: 250px; 
+
+.header .menu-btm:checked~.menu {
+    max-height: 250px;
 }
-.header .menu-btm:checked ~ .menu-icon .nav-icon{
+
+.header .menu-btm:checked~.menu-icon .nav-icon {
     background-color: transparent;
 }
-.header .menu-btm:checked ~ .menu-icon .nav-icon::before{
+
+.header .menu-btm:checked~.menu-icon .nav-icon::before {
     transform: rotate(-45deg);
     top: 0;
 }
-.header .menu-btm:checked ~ .menu-icon .nav-icon::after{
+
+.header .menu-btm:checked~.menu-icon .nav-icon::after {
     transform: rotate(45deg);
     top: 0;
 }
+
 @media (min-width:48em) {
-    .header li{
+    .header li {
         float: left;
+        position: relative;
+        
     }
-    .header .menu{
+
+    .header .menu {
         clear: none;
         float: right;
+        text-align: center;
     }
-   .header .menu-icon{
-    display: none;
-   }
-}
-h1,p{
-    color: white;
-}
-.sfondo-index{
-    display: block;
-    text-align: center;
-   
-}
-footer{
-    background-color: rgb(17, 16, 31);
-    color: white;
-    text-align: center;
+
+    .header .menu-icon {
+        display: none;
+    }
     
 
 }
 
+h1,
+p {
+    color: white;
+}
+
+.sfondo-index img {
+    
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding-top: 20%;
+}
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(17, 16, 31);
+    color: white;
+    text-align: center
+}
+
+@font-face{
+    src: url(/Assest/font/EB_Garamond/);
+    font-family: 'EB_Garamond',sans-serif;
+}
+.h1-title{
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+
+.div-input{
+    border: 0;
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-top: 5%;
+    align-content: center;
+    display: block;
+    text-align: center;
+    
+
+}
+.cont-tit{
+    display: block;
+    text-align: center;
+}
