@@ -1,12 +1,116 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(/Assest/immagini/sfondo.jpg);
 }
-.menu{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    ju
-  
+.header .logo{
+    height: 70px;
+    float: left;
+    padding: 10px 20px;
 }
+.header{
+    background-color: rgb(17, 16, 31);
+    position: fixed;
+    width: 100%;
+    }
+.header ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: rgb(17, 16, 31);
+    }
+.header ul a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    }
+.header ul a:hover{
+    background-color: rgb(35, 35, 54);
+}
+.header .menu{
+    clear: both;
+    max-height: 0;
+    transition: max height .3s ease-out;
+}
+.header .menu-icon{
+    padding: 20px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+.header .menu-icon .nav-icon{
+    background-color: white;
+    display: block;
+    width: 15px;
+    height: 2px;
+    position: relative;
+    transition: background-color .3s ease-out;
+}
+.header .menu-icon .nav-icon::before{
+    background-color: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: all .3s ease-out;
+    position: absolute;
+    top: 5px;
+     
+}
+.header .menu-icon .nav-icon::after{
+    background-color: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: all .3s ease-out;
+    position: absolute;
+    top: -5px;
+}
+.header .menu-btm{
+    display: none;
+}
+.header .menu-btm:checked ~ .menu{
+    max-height: 250px; 
+}
+.header .menu-btm:checked ~ .menu-icon .nav-icon{
+    background-color: transparent;
+}
+.header .menu-btm:checked ~ .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+.header .menu-btm:checked ~ .menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+@media (min-width:48em) {
+    .header li{
+        float: left;
+    }
+    .header .menu{
+        clear: none;
+        float: right;
+    }
+   .header .menu-icon{
+    display: none;
+   }
+}
+h1,p{
+    color: white;
+}
+.sfondo-index{
+    display: block;
+    text-align: center;
+   
+}
+footer{
+    background-color: rgb(17, 16, 31);
+    color: white;
+    text-align: center;
+    
+
+}
+
