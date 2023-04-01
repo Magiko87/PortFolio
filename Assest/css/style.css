@@ -14,7 +14,7 @@ h1,h2,h3,h4,h5,p,span {
 
 .header {
     background-color: rgb(17, 16, 31);
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 100;
 }
@@ -32,6 +32,7 @@ h1,h2,h3,h4,h5,p,span {
     padding: 20px;
     text-decoration: none;
     color: white;
+    
 }
 
 .header ul a:hover {
@@ -245,7 +246,7 @@ object-fit: cover;
 }
 .contact ul li{
     position: relative;
-    margin: 10px 0;
+    margin: 1opx 0;
     list-style: none;
     cursor: pointer;
 }
@@ -255,9 +256,7 @@ object-fit: cover;
     font-size: 18px;
     
 }
-.contact ul li span{
 
-}
 .contact .education li{
     margin-bottom: 15px;
 
@@ -323,8 +322,15 @@ object-fit: cover;
 .mail{
     font-size: x-small;
 }
+.Linkedin{
+     padding-left: 15px;
+}
 
- a{
+a{
     color: white;
     text-decoration: none;
+      
+}
+.linkedin{
+    color: brownss;
 }
