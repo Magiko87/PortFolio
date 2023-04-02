@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(/Assest/immagini/sfondo.jpg);
+    background-image: url(Assest/immagini/sfondo.jpg);
 }
 h1,h2,h3,h4,h5,p,span {
     color: white;
