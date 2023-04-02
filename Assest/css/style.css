@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(Assest/immagini/sfondo.jpg);
+    background-image:linear-gradient(to bottom right,rgb(4, 12, 49),rgba(5, 29, 125, 0.592),rgb(4, 12, 49))
 }
 h1,h2,h3,h4,h5,p,span {
     color: white;
