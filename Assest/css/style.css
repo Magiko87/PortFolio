@@ -1,4 +1,5 @@
 body {
+    
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image:linear-gradient(to bottom right,rgb(4, 12, 49),rgba(5, 29, 125, 0.592),rgb(4, 12, 49));
@@ -146,13 +147,16 @@ h1,h2,h3,h4,h5,p,span {
 
 
 
-footer {
-    position: fixed;
+.footer {
+    display: flex;
+    justify-content:center;
+    position:fixed;
     bottom: 0;
     width: 100%;
     background-color: rgb(17, 16, 31);
     color: white;
-    text-align: center
+    text-align: center;
+    
 }
 
 @font-face{
@@ -176,49 +180,11 @@ footer {
     display: flex;
     justify-content: center;
 }
-   
 
-.form-name{
-   
-    display: flex;
-  justify-content: center;
-}
-.form-cognome{
- 
-    display: flex;
-    justify-content: center;
-    
-}
-.form-mail{
-    display: flex;
-    justify-content: center;
 
-}
-.form-textarea{
-    display: flex;
-    justify-content: center;
-
-}
-.form-button{
-    display: flex;
-    justify-content: center;
 
     
-}
-.btn-invia{
-    height: 30px;
-    width: 60px;
-    border: 0;
-    border-radius: 30%;
-    background-color: rgb(17, 16, 31);
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
 
-}
-.btn-invia:hover{
-  background-color: rgb(35, 35, 54);
-}
 
 .container-c{
     display: grid;
@@ -376,22 +342,126 @@ a{
 .linkedin{
     color: brownss;
 }
-.btn-primary{
-    background-color: rgb(17, 16, 31);
-    border-radius: 30%;
-    margin-left:  38%;  
+
+.container-form{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    padding: 25px 30px;
+    
+    
+   
+    border-radius: 5px;
+    padding-top: 40px
+
+    
     
 }
-.btn-primary:hover { 
-    background-color: rgb(35, 35, 54)
+  .title-c{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    background-color: rgb(17, 16, 31);
+    color: white;
+    
+}
+.container-form form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+
+}
+form .user-details .input-box{
+    width: calc(100% / 2-20px);
+    margin: 20px 0 12px 0;
+    margin-bottom: 15px;
+    
+    
+
+}
+
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+
+    color: black;
+}
+.user-details .input-box input{
+    height: 45;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+}
+.user-details  .input-box input:focus,
+.user-details  .input-box input:valid{
+    border-color: rgb(35, 35, 54);
+
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: white;
+    background-color: rgb(17, 16, 31);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+form .button input:hover{
+    background-color: rgb(35, 35, 54);
+    
+
+}
+textarea{
+    resize: none;
+}
+ .btn-primary{
+
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: white;
+    background-color: rgb(17, 16, 31);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+ .btn-primary:hover{
+    background-color: rgb(35, 35, 54);
+
 }
 .card-title{
     text-align: center;
-    text-transform: uppercase;
-    
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 .h1-index{
-    
+    font-size: xx-large;
+    text-transform: uppercase;
     text-align: center;
-    
+}
+.h1-small{
+    text-align: center;
+   
 }
