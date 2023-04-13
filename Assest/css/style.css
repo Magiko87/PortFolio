@@ -387,6 +387,7 @@ form .user-details .input-box{
     width: calc(100% / 2-20px);
     margin: 20px 0 12px 0;
     margin-bottom: 15px;
+    max-width: 250px;
     
     
 
