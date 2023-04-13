@@ -31,26 +31,26 @@
     <br><br><br><br><br>
 
     <div class="container-form">
-        <form action="#">
+        <form action="https://formspree.io/f/mbjepqdz" method="POST">
             <div class="title-c">Contattami</div>
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">Nome</span>
-                    <input type="text" placeholder="Inserisci il nome" required>
+                    <input name="nome" type="text"  placeholder="Inserisci il nome" required>
                     <div class="input-box">
                         <span class="details">Cognome</span>
-                        <input type="text" placeholder="Inserisci il cognome" required>
+                        <input name="cognome" type="text" placeholder="Inserisci il cognome" required>
                         <div class="input-box">
                             <span class="details">E-mail</span>
-                            <input type="text" placeholder="Inserisci l e-mail" required>
+                            <input name="email" type="email" placeholder="Inserisci l e-mail" required>
                         </div>
                     </div>
 
                     <div class="form-textarea">
-                        <textarea cols="32" rows="10" placeholder="Scrivi..." required></textarea>
+                        <textarea name="message"cols="32" rows="10" placeholder="Scrivi..." required></textarea>
                     </div>
                     <div class="button">
-                        <input type="submit" value="Invia">
+                        <input  type="submit" name="text-area"value="Invia">
                     </div>
 
 
