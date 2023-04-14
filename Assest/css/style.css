@@ -190,12 +190,10 @@ h1,h2,h3,h4,h5,p,span {
     display: grid;
     grid-template-columns:1fr 2fr ;
     width: 80px; ;
-    
-    
     position: relative;
-    
-  
 }
+
+
 .info{
     position: relative;
     background-color: rgb(17, 16, 31);
@@ -473,4 +471,8 @@ textarea{
 .card{
     padding: 5px;
     margin: 20px;
+}
+@media only screen and(min-width:765px)
+{  
+    grid-template-columns: 1fr;
 }
