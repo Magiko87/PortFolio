@@ -472,7 +472,8 @@ textarea{
     padding: 5px;
     margin: 20px;
 }
-@media screen and (min-width:765px)
-{  
+@media screen and (min-width:765px){
+    .container-c{
     grid-template-columns: 1fr;
+}
 }
