@@ -474,6 +474,6 @@ textarea{
 }
 @media only screen and (min-width:765px){
     .container-c{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 }
