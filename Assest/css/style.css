@@ -108,27 +108,6 @@ h1,h2,h3,h4,h5,p,span {
     top: 0;
 }
 
-@media (min-width:48em) {
-    .header li {
-        float: left;
-        position: relative;
-        
-    }
-
-    .header .menu {
-        clear: none;
-        float: right;
-        text-align: center;
-        max-height: 58px;
-        
-    }
-
-    .header .menu-icon {
-        display: none;
-    }
-    
-
-}
 
 
 
@@ -472,8 +451,31 @@ textarea{
     padding: 5px;
     margin: 20px;
 }
-@media only screen and (min-width:765px){
+ @media only screen and (max-width:765px){
     .container-c{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
 }
+} 
+
+@media (min-width:48em) {
+    .header li {
+        float: left;
+        position: relative;
+        
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        text-align: center;
+        max-height: 58px;
+        
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+   
+
 }
+
