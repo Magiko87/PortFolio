@@ -481,8 +481,13 @@ textarea{
    
 
 }
+
 .card-conteiner{
     display: flex;
     flex: row;
    
+}
+@media only screen and (max-width:765px){
+    .card-conteiner{
+        display: contents; }
 }
