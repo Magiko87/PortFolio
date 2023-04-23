@@ -453,6 +453,7 @@ textarea{
 .card{
     padding: 30px;
     margin: 50px;
+    
 }
  @media only screen and (max-width:765px){
     .container-c{
@@ -483,8 +484,8 @@ textarea{
 }
 
 .card-conteiner{
-    display: flex;
-    flex: row;
+    display:flex;
+    
    
 }
 @media only screen and (max-width:765px){

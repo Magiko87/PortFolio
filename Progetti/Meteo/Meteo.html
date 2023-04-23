@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,38 +10,42 @@
     <meta property="og:title" content="Meteo" />
     <meta property="og:description" content="Un'app che fa previsioni meteo" />
     <meta property="og:url" content=" " />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="/Progetti/Meteo/Immagini/cover" />
 </head>
 
 <body>
-    <div class="main-container">
-        <div class="contaier top">
-            <h1>Meteo App</h1>
-            <form action="" ansubmit="return false">
-                <input type="text" class="search" placeholder="Cerca la città">
-                <button type="submit" class="btn">Invio </button>
-                <p class="error"></p>
-            </form>
-            <section>
-                <div class="container">
-                    <div class="icon">
-                        <img src="" alt="" class="weather-icon" >
+    <div class="card">
+        <div class="search">
+            <input type="text" class="search" placeholder="Enter city name" spellcheck="false">
+            <button  class="button" type="submit">Enter</button>
+        </div>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+        <div class="weather">
+            <img src="./Immagini/rain.png" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">Roma</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="./Immagini/humidity.png">
+                    <div>
+                        <p class="humidity"> 50%</p>
+                        <p>Humidity</p>
                     </div>
-                    <div class="location">
-                        <div class="city">New York, US</div>
-                        <div class="date">Martedi,Nov 26 2023 </div>
-                        <div class="current">
-                            <div class="temp">Temp: 25
-                                <span>°C</span></div>
-                                <div class="weather">Meteo:Sole</div>
-                                <div class="temp-range">Temp Range:18°C/ 15°C</div>
-
+                    <div class="col">
+                        <img src="./Immagini/wind.png">
+                        <div>
+                            <p class="wind">15km</p>
+                            <p>Wind</p>
                         </div>
                     </div>
+
                 </div>
-            </section>
+            </div>
         </div>
     </div>
+    <footer>Daniele Camodeca-®Copyright</footer>
 
 
 
@@ -49,7 +53,9 @@
 
 
 
-    <script>src = "Meteo.js" </script>
+
+
+    <script src="Meteo.js"></script>
 </body>
 
 </html>
