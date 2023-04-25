@@ -123,3 +123,32 @@ footer{
     font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
 }
+.title-Weather{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    margin-bottom: -50px;
+    text-transform: uppercase;
+    color: rgb(7, 27, 71);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: larger;
+}
+@media only screen and (max-width: 767px){
+    ::placeholder{
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-align: left;
+        width: 200px;
+    }
+}
+@media only screen and (min-width: 768px){
+    ::placeholder{
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+        width: 200px;
+    }
+
+}

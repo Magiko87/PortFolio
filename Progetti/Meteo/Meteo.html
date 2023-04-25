@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meteo</title>
+    <title>Weather</title>
     <link rel="stylesheet" href="./Meteo.css">
     <meta property="og:title" content="Meteo" />
     <meta property="og:description" content="Un'app che fa previsioni meteo" />
@@ -14,38 +14,41 @@
 </head>
 
 <body>
-    <div class="card">
-        <div class="search">
-            <input type="text" class="search" placeholder="Enter city name" spellcheck="false">
-            <button  class="button" type="submit">Enter</button>
-        </div>
-        <div class="error">
-            <p>Invalid city name</p>
-        </div>
-        <div class="weather">
-            <img src="./Immagini/rain.png" class="weather-icon">
-            <h1 class="temp">22°C</h1>
-            <h2 class="city">Roma</h2>
-            <div class="details">
-                <div class="col">
-                    <img src="./Immagini/humidity.png">
-                    <div>
-                        <p class="humidity"> 50%</p>
-                        <p>Humidity</p>
-                    </div>
-                    <div class="col">
-                        <img src="./Immagini/wind.png">
-                        <div>
-                            <p class="wind">15km</p>
-                            <p>Wind</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+    <div class="title-Weather">
+        <h1>Weather</h1>
     </div>
-    <footer>Daniele Camodeca-®Copyright</footer>
+    <div class="card">
+        
+            <div class="col-12 col-md-12 col-lg-12"></div>
+            <div class="search">
+                <input type="text" class="search" placeholder="Enter city name" spellcheck="false">
+                <button class="button" type="submit">Enter</button>
+            </div>
+            <div class="error">
+                <p>Invalid city name</p>
+            </div>
+            <div class="weather">
+                <img src="./Immagini/rain.png" class="weather-icon">
+                <h1 class="temp">22°C</h1>
+                <h2 class="city">Roma</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="./Immagini/humidity.png">
+                        <div>
+                            <p class="humidity"> 50%</p>
+                            <p>Humidity</p>
+                        </div>
+                        <div class="col">
+                            <img src="./Immagini/wind.png">
+                            <div>
+                                <p class="wind">15km</p>
+                                <p>Wind</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <footer>Daniele Camodeca-®Copyright</footer>
 
 
 
@@ -55,7 +58,7 @@
 
 
 
-    <script src="Meteo.js"></script>
+                <script src="Meteo.js"></script>
 </body>
 
 </html>
