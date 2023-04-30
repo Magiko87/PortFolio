@@ -14,7 +14,33 @@ function setColor(){
         }
            
     
+    }
+
+
+function keysPressed(){
+    if(event.key == "ArrowLeft"){
+        count.innerHTML--;
+        setColor()
+    }
+
+    if(event.key == "ArrowRight"){
+        count.innerHTML++;
+        setColor()
+    }
+    if(event.key == "Enter"){
+        count.innerHTML= 0;
+        setColor()
+    }
+    
 }
+
+
+
+window.addEventListener("keydown",
+keysPressed)
+
+
+
 
 add.addEventListener("click", ()  => {
     count.innerHTML++;
