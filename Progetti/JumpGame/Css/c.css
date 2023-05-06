@@ -24,8 +24,6 @@ section{
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-image: url(/Progetti/JumpGame/Immagini/VelvetyCheapEnglishsetter-mobile.mp4)no-repeat center;
-   
    
 }
 h1{
@@ -39,6 +37,7 @@ h1{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    z-index: 10;
    
 }
 .conteiner::after{
@@ -62,7 +61,7 @@ h1{
     position: relative;
     top: 150px;
     left: 20px;
-    z-index: 1;
+    z-index: 30;
 
 }
 .heroG{
@@ -75,7 +74,7 @@ h1{
     position: relative;
     top: 90px;
     left: 440px;
-    z-index: 1;
+    z-index: 30;
     /* animation:move 1s infinite linear; */
 }
 .ironMan{
