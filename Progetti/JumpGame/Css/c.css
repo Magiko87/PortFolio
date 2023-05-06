@@ -29,7 +29,7 @@ h1{
     color: white;
 }
 .conteiner{
-    background: url(/Progetti/JumpGame/Immagini/sfo.jpeg) no-repeat center center ;
+    background-image: url(/Progetti/JumpGame/Immagini/sfo.jpeg) no-repeat center center ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
