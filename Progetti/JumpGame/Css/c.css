@@ -21,14 +21,15 @@ section{
     flex-direction: column;
     height: 100vh;
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: rgba(32, 32, 32, 0.814);
 }
 h1{
     font-size: 3rem;
     margin-bottom: 1rem;
+    color: white;
 }
 .conteiner{
-    background: url(/Progetti/JumpGame/Immagini/SfondoB.gif) no-repeat center center ;
+    background: url(/Progetti/JumpGame/Immagini/sfo.jpeg) no-repeat center center ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
