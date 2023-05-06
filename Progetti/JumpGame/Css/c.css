@@ -20,7 +20,7 @@ section{
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 h1{
@@ -28,8 +28,11 @@ h1{
     margin-bottom: 1rem;
 }
 .conteiner{
-    background: url(/Immagini/VelvetyCheapEnglishsetter-mobile.mp4)center no-repeat;
-    position: relative;
+    background: url(/Progetti/JumpGame/Immagini/VelvetyCheapEnglishsetter-mobile.mp4) no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .conteiner::after{
     content: "";
