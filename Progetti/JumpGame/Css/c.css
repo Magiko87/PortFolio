@@ -11,6 +11,7 @@ body{
     font-family:sans-serif;
     background-color: black;
     
+    
 }
 p{
     font-size: 1.5rem;
@@ -23,8 +24,8 @@ section{
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-image: url(Progetti/JumpGame/Immagini/VelvetyCheapEnglishsetter-mobile.mp4)no-repeat center;
-    color: rgba(255, 255, 255, 0.628);
+    background-image: url(/Progetti/JumpGame/Immagini/VelvetyCheapEnglishsetter-mobile.mp4)no-repeat center;
+   
    
 }
 h1{
@@ -38,7 +39,7 @@ h1{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    z-index: 1;
+   
 }
 .conteiner::after{
     content: "";
