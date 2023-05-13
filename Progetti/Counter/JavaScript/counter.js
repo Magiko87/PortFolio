@@ -1,28 +1,42 @@
+// Creazione della matrice buttons per aggiunta dei pulsanti 
+
 const buttons = [];
+//Fine
 
+//Creazione della variabile counter per tenere traccia e aggiornare il valore del contatore.
 let counter = 0;
+//Fine
 
+//Seleziona un elemento HTML con l'ID "count" e lo assegna alla variabile count.
 const count = document.querySelector("#count");
+//Fine
 
+//Funzione  che imposta il testo dell'elemento selezionato con l'ID "count" con il valore corrente della variabile counter
 function updateCounter() {
   count.innerText = counter;
 }
 
 updateCounter();
+//Fine
 
+//Consente di selezionare un elemento HTML con classe "buttons" per poterlo manipolare
 let buttonsContainer = document.querySelector('.buttons');
+//Fine
 
-
-// Inizio crazione dei bottoni dinamicamente
+// Inizio crazione dei bottoni dinamicamente:
 const subtractButton = document.createElement("button");
+//Subtract
 subtractButton.innerText = "Subtract";
 subtractButton.classList.add("subtract", "btn");
 
+
 const addButton = document.createElement("button");
+//Add
 addButton.innerText = "Add";
 addButton.classList.add("add", "btn");
 
 const resetButton = document.createElement("button");
+//Reset
 resetButton.innerText = "Reset";
 resetButton.classList.add("reset", "btn");
 // Fine creazione bottoni js
@@ -45,7 +59,8 @@ addButton.prepend(addIcon);
 //fine aggiunta elementi <i> ai pulsanti
 
 
-
+//Ad ogni evento del click, viene invocata la funzione che aggiorna il contatore, il colore del contatore, 
+//visualizza il valore del contatore e riproduce un effetto sonoro.
 subtractButton.addEventListener("click", () =>{
     counter--;
     setColor();
@@ -67,7 +82,10 @@ addButton.addEventListener("click", () =>{
           sound();
 
 });
+//Fine
 
+//Ad ogni evento del tasto della tastiera, viene invocata la funzione che aggiorna il contatore, il colore del contatore, 
+//visualizza il valore del contatore e riproduce un effetto sonoro.
 document.addEventListener("keydown", function(event) {
     if(event.key == "ArrowLeft") {
       counter--;
@@ -90,17 +108,25 @@ document.addEventListener("keydown", function(event) {
 
     }
 });
+//Fine
 
+//Aggiunta dei pulsanti alla matrice buttons
 buttons.push(subtractButton);
 buttons.push(resetButton);
 buttons.push(addButton);
+//Fine
 
+//Assicura che i pulsanti presenti nella matrice buttons vengano aggiunti al contenitore HTML 
+//con la classe "buttons" 
+//una volta che il documento HTML è  caricato. 
 document.addEventListener('DOMContentLoaded', () => {
   buttons.forEach((button) => {
     buttonsContainer.appendChild(button)
   });
 });
+//Fine
 
+//Funzione del colore
 function setColor(){
     if(counter > 0){
         count.style.color = "green";
@@ -110,6 +136,9 @@ function setColor(){
         count.style.color = "white";
     }
 }
+//Fine
+
+//Funzione del suono
 function sound() {
   const audio = new Audio("./Suoni/mixkit-handgun-click-1660.mp3");
   audio.currentTime = 0.0;
@@ -118,3 +147,4 @@ function sound() {
       audio.pause();
   }, 1000);
 }
+//Fine
