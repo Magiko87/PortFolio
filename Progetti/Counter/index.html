@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,29 +13,23 @@
     <meta property="og:url" content=" " />
     <meta property="og:image" content="/Progetti/Counter/Immagini/Count-im" />
 </head>
-
 <body>
     <div class="container">
         <div class="counter">
-            <h1>Counter</h1>
-            <span class="count">0</span>
-            <hr>
-            <div class="buttons">
-                <button class="subtract">
-                    <i class="fa-solid fa-arrow-down fa-2xs"></i>
-                    Subtract
-                </button>
-                <button class="reset">
-                    <i class="fa-solid fa-power-off fa-flip fa-xs"></i>
-                    Reset
-                </button>
-                <button class="add">
-                    <i class="fa-solid fa-arrow-up fa-2xs"></i>
-                    Add
-                </button>
+            <div class="title">
+                <h1>Counter</h1>
+            </div>
+            <div class="count-wrapper">
+                <span id="count">0</span>
+            </div>
+            <div class="buttons"> 
+                <div class="subtract"></div>
+                <div class="reset"></div>
+                <div class="add"></div>
             </div>
             <script type="text/javascript" src="./JavaScript/counter.js"></script>
             <footer>Daniele Camodeca-®Copyright</footer>
+        </div>
+    </div>
 </body>
-
 </html>

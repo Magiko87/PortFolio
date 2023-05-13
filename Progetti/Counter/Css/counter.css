@@ -1,32 +1,42 @@
-body{
-    background:linear-gradient(90deg, rgba(85,226,103,0) 0%, rgba(1,168,38,1) 50%, rgba(51,142,58,0) 96%);
+body {
+    background: linear-gradient(90deg, rgba(85, 226, 103, 0) 0%, rgba(1, 168, 38, 1) 50%, rgba(51, 142, 58, 0) 96%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-.container{
+
+.container {
     max-width: 900px;
-    margin: 0 auto;
     padding: 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-
 }
-.counter{
+
+
+.counter {
     width: 40rem;
+    margin: 0 auto;
     border: 5px solid white;
     padding: 1rem;
-    background: radial-gradient(circle, rgba(0,1,0,0.9225913323782235) 49%, rgba(0,238,56,0.9483792979942693)96% );
+    background: radial-gradient(circle, rgba(0, 1, 0, 0.9225913323782235) 49%, rgba(0, 238, 56, 0.9483792979942693) 96%);
     color: white;
-    text-align: center;
-    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
+
+
 .counter > * {
     margin-bottom: 2rem;
 
 }
-
-.count{
-    font-size: 4rem;
+#count{
+    font-size: 6rem;
 }
 .buttons button{
     padding:1rem ;
