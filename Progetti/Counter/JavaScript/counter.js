@@ -25,9 +25,25 @@ addButton.classList.add("add", "btn");
 const resetButton = document.createElement("button");
 resetButton.innerText = "Reset";
 resetButton.classList.add("reset", "btn");
-
-
 // Fine creazione bottoni js
+
+// creazione elementi <i>:
+const subtractIcon = document.createElement('i');
+subtractIcon.classList.add('fa-solid', 'fa-arrow-down', 'fa-2xs');
+
+const resetIcon = document.createElement('i');
+resetIcon.classList.add('fa-solid', 'fa-power-off', 'fa-flip', 'fa-xs');
+const addIcon = document.createElement('i');
+
+addIcon.classList.add('fa-solid', 'fa-arrow-up', 'fa-2xs');
+// fine creazione elementi >i>
+
+// Aggiunta degli elementi <i> ai pulsanti
+subtractButton.prepend(subtractIcon);
+resetButton.prepend(resetIcon);
+addButton.prepend(addIcon);
+//fine aggiunta elementi <i> ai pulsanti
+
 
 
 subtractButton.addEventListener("click", () =>{

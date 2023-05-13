@@ -17,7 +17,7 @@ body {
 
 
 .counter {
-    width: 40rem;
+    width: 30rem;
     margin: 0 auto;
     border: 5px solid white;
     padding: 1rem;
@@ -59,7 +59,12 @@ button.add{
     background-color: green;
    
 }
-
+hr{
+    border: none;
+    border-top: 1px solid white;
+    width: 100%;
+    margin: 2rem 0;
+}
 footer{
     display: flex;
     justify-content: center;
